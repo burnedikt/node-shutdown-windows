@@ -17,6 +17,7 @@
     "windows",
     "reboot"
   ],
+  "os" : [ "win32" ],
   "author": "Benedikt Reiser <benedikt.reiser@gmail.com>",
   "license": "ISC",
   "bugs": {
