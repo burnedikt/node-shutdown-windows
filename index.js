@@ -8,9 +8,9 @@ const shutdownCmd = 'shutdown';
 /**
  *  Logs off the current user
  *
- * @param {Number} timeout  Sets the timer for system shutdown in xx seconds
- * @param {any} force Forces running applications to close
- * @param {any} message Specifies a message to be displayed in the Message area of the System Shutdown window. You can use a maximum of 127 characters
+ * @param {Number} timeout Sets the timer for system logoff in seconds
+ * @param {Boolean} force Forces running applications to close
+ * @param {String} message Specifies a message to be displayed in the Message area of the System Shutdown window. You can use a maximum of 127 characters
  * @returns {ChildProcess}
  */
 exports.logoff = function (timeout, force, message) {
@@ -36,9 +36,9 @@ exports.logoff = function (timeout, force, message) {
 /**
  * Shuts down the local computer
  *
- * @param {Number} timeout  Sets the timer for system shutdown in xx seconds
- * @param {any} force Forces running applications to close
- * @param {any} message Specifies a message to be displayed in the Message area of the System Shutdown window. You can use a maximum of 127 characters
+ * @param {Number} timeout Sets the timer for system shutdown in seconds
+ * @param {Boolean} force Forces running applications to close
+ * @param {String} message Specifies a message to be displayed in the Message area of the System Shutdown window. You can use a maximum of 127 characters
  * @returns {ChildProcess}
  */
 exports.shutdown = function (timeout, force, message) {
@@ -64,9 +64,9 @@ exports.shutdown = function (timeout, force, message) {
 /**
  * Reboots after shutdown
  *
- * @param {Number} timeout  Sets the timer for system shutdown in xx seconds
- * @param {any} force Forces running applications to close
- * @param {any} message Specifies a message to be displayed in the Message area of the System Shutdown window. You can use a maximum of 127 characters
+ * @param {Number} timeout Sets the timer for system shutdown in seconds
+ * @param {Boolean} force Forces running applications to close
+ * @param {String} message Specifies a message to be displayed in the Message area of the System Shutdown window. You can use a maximum of 127 characters
  * @returns {ChildProcess}
  */
 exports.reboot = function (timeout, force, message) {
