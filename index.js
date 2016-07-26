@@ -1,3 +1,5 @@
+'use strict';
+
 // see https://technet.microsoft.com/de-de/library/bb491003.aspx for details
 // right now, only local shutdown / reboot / logoff is implemented.
 // we need the ability to spawn processes
